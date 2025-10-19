@@ -65,6 +65,7 @@ body {
   margin: 0 auto;
 }
 
+// кнопки со стрелками
 .btn {
   .gr();
   font-size: 16px;
@@ -107,6 +108,7 @@ body {
       top: 0;
     }
 
+    // адаптивный текст СТАВРОПОЛЬ
     svg {
       position: absolute;
       left: min(50px, 2.6%);
@@ -114,6 +116,7 @@ body {
       width: min(1820px, 94.8vw);
     }
 
+    // адаптивный вырез снизу картинки
     .main__img-cutout {
       width: min(1720px, 88vw);
       height: min(60px, calc(60px - (1920px - 100vw) * 0.035));
@@ -125,6 +128,7 @@ body {
     }
   }
 
+  //блок под информацию на картинке и header
   .main__header-info {
     width: min(1920px, 100%);
     position: absolute;
@@ -143,7 +147,6 @@ body {
         justify-content: center;
         padding: 0 20px;
 
-
         a {
           text-decoration: none;
           color: white;
@@ -161,6 +164,7 @@ body {
       }
     }
 
+    //выпадающее меню под 3 ссылкой header
     #header__menu-item3 {
       position: relative;
 
@@ -177,6 +181,8 @@ body {
         left: -20px;
       }
     }
+
+    // меню под пунктом Еще
     #header__menu-item5 {
       position: relative;
 
@@ -191,6 +197,7 @@ body {
         gap: 18px;
         top: 30px;
         left: -200px;
+
         .menu-open5__menu-open3 {
           align-items: flex-start;
           justify-content: flex-start;
@@ -204,7 +211,7 @@ body {
       }
     }
 
-
+    // стили информации на картинке
     .main__info {
       margin-top: min(138px, calc(138px - (1920px - 100vw) * 0.15));
       margin-left: 100px;
@@ -229,6 +236,7 @@ body {
   }
 }
 
+//навигация  на размерах <425
 .nav {
   background: @btn-color;
   justify-content: space-between;
@@ -241,7 +249,7 @@ body {
   gap: 14px;
   align-items: center;
 
-  img {
+  svg {
     height: 14px;
   }
 }
@@ -270,7 +278,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
     font-size: 16px;
 
     .nav__menu_item3 {
@@ -281,18 +288,17 @@ body {
     a {
       text-decoration: none;
       color: @main-color;
-
     }
 
     .nav__menu-open3 {
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
-        gap: 10px;
-        border-radius: 20px;
-        padding: 14px;
-        backdrop-filter: blur(20px);
-        background: rgba(0, 0, 0, 0.2);
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 10px;
+      border-radius: 20px;
+      padding: 14px;
+      backdrop-filter: blur(20px);
+      background: rgba(0, 0, 0, 0.2);
     }
   }
 
@@ -303,6 +309,7 @@ body {
   }
 }
 
+//блок с карточками
 .city {
   color: @second-color;
 
@@ -410,6 +417,7 @@ body {
   }
 }
 
+//проект в цифрах
 .project {
   padding: 60px 0;
   color: @main-color;
@@ -475,6 +483,7 @@ body {
   }
 }
 
+// инфо ресурсы
 .info {
   color: @second-color;
   padding-bottom: 109px;

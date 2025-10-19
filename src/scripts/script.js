@@ -21,7 +21,6 @@ $(document).ready(function () {
         nav__menu.addClass('close');
     })
 
-
 //меню комфортная среда в header
     header__menu_item3.click(function () {
         console.log(1);
@@ -33,16 +32,14 @@ $(document).ready(function () {
         e.stopPropagation(); //прерывает команду по цепочке к родителю
     })
 
-
     //меню комфортная среда в nav
-
     nav__menu_item3.click(function (e) {
         nav__menu_open3.removeClass('close').addClass('flex');
         arr_down.removeClass('close'); //замена стрелок
         arr_right.addClass('close');
         e.stopPropagation();
     })
-        // закрытие меню и сброс к исходному состоянию
+    // закрытие меню и сброс к исходному состоянию
     nav__menu_items.click(function (e) {
         nav__menu_open3.addClass('close').removeClass('flex');
         nav__menu.addClass('close');
@@ -51,7 +48,6 @@ $(document).ready(function () {
     })
 
     // Адаптив hover menu. Элементы скрываются из hover menu и добавляются в пункт Еще в зависимости от ширины окна
-
     if (doc_width < 1300) {
         $('#header__menu-item4').addClass('close');
         header__menu_item5.removeClass('close');
