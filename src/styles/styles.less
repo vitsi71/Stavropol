@@ -120,11 +120,10 @@ body {
     .main__img-cutout {
       width: min(1720px, 88vw);
       height: min(60px, calc(60px - (1920px - 100vw) * 0.035));
-      margin: 0 auto;
+      margin: max(-64px, calc(-64px + (1920px - 100vw) * 0.035)) auto 0 ;
       background: @main-color;
       border-radius: 80px 80px 0 0;
       position: relative;
-      margin-top: max(-64px, calc(-64px + (1920px - 100vw) * 0.035));
     }
   }
 
@@ -511,7 +510,7 @@ body {
 .footer {
   padding: 35px 110px 33px 100px;
   background: #3B3B3B;
-  border-radius: 40px 40px 0px 0px;
+  border-radius: 40px 40px 0 0;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   row-gap: 5px;

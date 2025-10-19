@@ -40,7 +40,7 @@ $(document).ready(function () {
         e.stopPropagation();
     })
     // закрытие меню и сброс к исходному состоянию
-    nav__menu_items.click(function (e) {
+    nav__menu_items.click(function () {
         nav__menu_open3.addClass('close').removeClass('flex');
         nav__menu.addClass('close');
         arr_right.removeClass('close');
