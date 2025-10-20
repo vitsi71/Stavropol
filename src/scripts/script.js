@@ -43,16 +43,16 @@ $(document).ready(function () {
     //меню комфортная среда в nav
     nav__menu_item3.click(function (e) {
         nav__menu_open3.removeClass('close').addClass('flex');
-        arr_down.removeClass('close'); //замена стрелок
-        arr_right.addClass('close');
+        arr_down.removeClass('close').addClass('flex'); //замена стрелок
+        arr_right.addClass('close').removeClass('flex');
         e.stopPropagation();
     })
     // закрытие меню и сброс к исходному состоянию
     nav__menu_items.click(function () {
         nav__menu_open3.addClass('close').removeClass('flex');
         nav__menu.addClass('close');
-        arr_right.removeClass('close');
-        arr_down.addClass('close');
+        arr_right.removeClass('close').addClass('flex');
+        arr_down.addClass('close').removeClass('flex');
     })
 
     // Адаптив hover menu. Элементы скрываются из hover menu и добавляются в пункт Еще в зависимости от ширины окна
