@@ -282,6 +282,7 @@ body {
       text-decoration: none;
       color: var(--main-color);
       border-bottom: 1px solid transparent;
+      width: fit-content;
       &:hover{
         border-bottom: 1px solid var(--main-color);
       }
