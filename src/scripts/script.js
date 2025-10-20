@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    const doc = $(document);
     const doc_width = $(document).width();
     const nav__menu = $('.nav__menu');
     const nav__menu_items = $('.nav__menu-items');
@@ -22,13 +23,20 @@ $(document).ready(function () {
     })
 
 //меню комфортная среда в header
-    header__menu_item3.click(function () {
-        console.log(1);
-        header__menu_open3.removeClass('close').addClass('flex');
+    header__menu_item3.click(function (e) {
+          header__menu_open3.removeClass('close').addClass('flex')
+        e.stopPropagation();
     })
 
     header__menu_open3.click(function (e) {
         header__menu_open3.addClass('close').removeClass('flex');
+        e.stopPropagation(); //прерывает команду по цепочке к родителю
+    })
+
+   doc.click(function (e) {
+        header__menu_open3.addClass('close').removeClass('flex');
+       header__menu_open5.addClass('close').removeClass('flex');
+       menu_open5__menu_open3.addClass('close').removeClass('flex');
         e.stopPropagation(); //прерывает команду по цепочке к родителю
     })
 
@@ -67,8 +75,9 @@ $(document).ready(function () {
     }
 
     //меню Еще в header
-    header__menu_item5.click(function () {
+    header__menu_item5.click(function (e) {
         header__menu_open5.removeClass('close').addClass('flex');
+        e.stopPropagation();
     })
 
     header__menu_open5.click(function (e) {
